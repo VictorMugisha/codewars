@@ -5,3 +5,5 @@
 `'https://jsonplaceholder.typicode.com/posts'`
 `'https://jsonplaceholder.typicode.com/comments'`
 `'https://jsonplaceholder.typicode.com/albums'`
+
+#### 3. Write a JavaScript function that fetches data from an API and retries the request a specified number of times if it fails.
