@@ -1,0 +1,1 @@
+### Create two web workers (`worker1.js` and `worker2.js`) that calculate Fibonacci numbers concurrently. Each worker should handle a different range of numbers. The main script (`main.js`) should coordinate the workers, gather results, and output the combined results.
