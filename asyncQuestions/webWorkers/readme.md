@@ -1,0 +1,1 @@
+### Write a web worker script (`worker.js`) that calculates the `sum` of squares for numbers from `1` to `n`. The main script (`main.js`) should create a web worker, send `n` as a message, and log the result returned by the worker.
