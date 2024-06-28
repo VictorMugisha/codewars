@@ -1,0 +1,31 @@
+[
+    {
+      "id": 1,
+      "fistName": "Henry",
+      "lastName": "Cavill",
+      "userName": "superman",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "fistName": "Tom",
+      "lastName": "Holland",
+      "userName": "spiderman",
+      "password": "uncharted"
+    },
+    {
+      "id": 3,
+      "fistName": "Jenna",
+      "lastName": "Ortega",
+      "userName": "wednesday",
+      "password": "scream"
+    },
+    {
+      "id": 4,
+      "fistName": "Tobey",
+      "lastName": "Maguire",
+      "userName": "tobeymaguire",
+      "password": "spiderman"
+    }
+  ]
+  
