@@ -1,22 +1,24 @@
 var numberFormat = function (number) {
-    const stringNumber = Math.abs(number).toString(); // Convert number to string and handle negative sign
-    const length = stringNumber.length;
-    const result = [];
+    const sign = number >= 0 ? "positive" : "negative"
+    const numberString = Math.abs(number).toString()
+    const length = numberString.length
+    let packet = []
+    const packets = []
 
-    for (let i = 0; i < length; i++) {
-        // Insert comma every 3 digits from the right
-        if (i > 0 && (length - i) % 3 === 0) {
-            result.push(',');
+    for (let i = length - 1; i >= 0; i--) {
+        if (packet.length !== 3) {
+            packet.push(numberString[i])
         }
-        result.push(stringNumber[i]);
+        if (packet.length === 3) {
+            packets.push(packet.reverse().join(''))
+            packet = []
+        }
     }
-
-    // Handle negative sign if present
-    if (number < 0) {
-        result.unshift('-');
+    if (packet.length !== 0) {
+        packets.push(packet.reverse().join(''))
+        packet = []
     }
-
-    return result.join('');
+    return sign === "positive" ? packets.reverse().join(',') : "-" + packets.reverse().join(',')
 };
 
 // Test cases
